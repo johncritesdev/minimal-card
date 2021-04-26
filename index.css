@@ -1,0 +1,140 @@
+/* #C7E3F2 background color*/
+/* #4398F7 about section */
+/* #3288ED recent work */
+/* #277DE3 contact */
+/* #7A7A7A h3 color */
+/* #6DFAFB hover state color */
+/* #DFEEFD body text color */
+
+/************ resets ************/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; 
+  /* 1rem = 10px */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #C7E3F2;
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+/************ CARD CONTAINER ************/
+
+.card-container {
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/************ CARD HEADING ************/
+
+.card-heading {
+  width: 100%;
+  margin-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.card-heading > h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+.card-heading > h3 {
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #7A7A7A;
+}
+
+.card-photo {
+  border-radius: 50%;
+  width: 12rem;
+}
+/************ GENERAL CARD SECTION STYLES ************/
+.card-content {
+  padding: 3.5rem;
+  text-align: left;
+}
+
+.card-section__heading {
+  padding-bottom: 3rem;
+  border-bottom: .3px solid rgba(223, 238, 253, .3);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.card-section__body {
+  padding-top: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  color: #DFEEFD;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid rgba(223, 238, 253, .3);
+  padding: 1rem 2rem;
+  outline: unset;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+}
+
+.card-link {
+  color: #fff;
+  cursor: pointer;
+}
+/************ ABOUT CARD SECTION ************/
+
+.card-about {
+  margin-top: 3rem;
+  background: #4398F7;
+}
+
+/************ RECENTWORK CARD SECTION ************/
+
+.card-recentwork {
+  background: #3288ED;
+}
+
+.card-recentwork .card-section__body > ul {
+  line-height: 4rem;
+  list-style: none;
+}
+
+ion-icon {
+  color: #DFEEFD;
+  margin-right: .8rem; 
+}
+
+/************ CONTACT CARD SECTION ************/
+
+.card-contact {
+  background: #277DE3;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
