@@ -95,6 +95,7 @@ body {
   background-color: transparent;
   border: 1px solid rgba(223, 238, 253, .3);
   padding: 1rem 2rem;
+  margin: .8rem;
   outline: unset;
   border-radius: 5px;
   color: #fff;
@@ -102,6 +103,15 @@ body {
   letter-spacing: 1px;
   cursor: pointer;
   display: flex;
+  transition: .4s ease all;
+}
+
+.btn:hover {
+  cursor: pointer;
+  border: 1px solid #6DFAFB;
+  color: #6DFAFB;
+  transition: .4s ease all;
+  
 }
 
 .card-link {
@@ -137,4 +147,9 @@ ion-icon {
   background: #277DE3;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+.card-contact .card-section__body {
+  display: flex;
+  flex-wrap: wrap;
 }
